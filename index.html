@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang"ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>会計ちゃん</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <form>
+            <h1>会計ちゃん</h1>
+            <ul>
+                <li>
+                    <label>合計金額：</label>
+                    <input id="total" type="text" maxlength="8"/>&nbsp;円
+                </li>
+                <li>
+                    <label>人数：</label>
+                    <input id="number" type="text" maxlength="3"/>&nbsp;人
+                </li>
+                <li>
+                    <label>単位：</label>
+                    <select id="unit">
+                        <option value="1">1円</option>
+                        <option value="10">10円</option>
+                        <option value="100">100円</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="javascript:calculation();">計 算</a>
+                </li>
+            </ul>
+            <ul>
+                <li id="result">
+                    <label>一人あたり</label>
+                    <span class="money" id="paymentPerPerson"></span>&nbsp;円
+                </li>
+                <li>
+                    <label>おつり</label>
+                    <span class="money" id="change"></span>&nbsp;円
+                </li>
+                <li>
+                    <label>おつりゲット</label>
+                    <span class="person" id="changeGetter">誕生日が一番近い人</span>
+                </li>
+            </ul>
+        </form>
+
+
+    <script src="index.js"></script>
+    </body>
+</html>

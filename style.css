@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴシック";
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+li {
+    width: 500px;
+    height: 40px;
+}
+label {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    font-weight: bold;
+}
+input {
+    display: inline-block;
+    border: solid 1px #333;
+    width: 80px;
+    padding: 1px 2px;
+}
+select {
+    display: inline-block;
+    border: solid 1px #333;
+    width: 80px;
+    padding: 1px 2px;
+
+}
+.money {
+    display: inline-block;
+    width: 80px;
+}
+.person {
+    display: inline-block;
+    width: 150px;
+}
+a {
+    font-weight: bold;
+    border: solid 2px #333;
+    display: inline-block;
+    padding: 10px 100px;
+}
